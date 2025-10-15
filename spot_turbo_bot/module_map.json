@@ -1,0 +1,683 @@
+{
+  "modules": {
+    "spot_turbo_bot": {
+      "async_functions": [],
+      "classes": [],
+      "file": "spot_turbo_bot\\__init__.py",
+      "functions": [
+        "_expose_legacy",
+        "_expose_package"
+      ],
+      "imported_by": [],
+      "imports": [
+        "__future__",
+        "importlib",
+        "types",
+        "typing"
+      ],
+      "possibly_unused": []
+    },
+    "spot_turbo_bot.core": {
+      "async_functions": [],
+      "classes": [],
+      "file": "spot_turbo_bot\\core\\__init__.py",
+      "functions": [],
+      "imported_by": [],
+      "imports": [],
+      "possibly_unused": []
+    },
+    "spot_turbo_bot.core.config": {
+      "async_functions": [],
+      "classes": [],
+      "file": "spot_turbo_bot\\core\\config.py",
+      "functions": [
+        "_env_bool",
+        "_env_csv",
+        "_env_int",
+        "_env_int_with_fallback",
+        "_env_multiline",
+        "_optional_env_str",
+        "_parse_int_csv",
+        "_parse_symbols",
+        "env_float",
+        "env_str",
+        "fmt_pct",
+        "require_env"
+      ],
+      "imported_by": [
+        "spot_turbo_bot.core.exchange_info",
+        "spot_turbo_bot.core.logger",
+        "spot_turbo_bot.core.state",
+        "spot_turbo_bot.core.utils_time",
+        "spot_turbo_bot.infra.binance_http",
+        "spot_turbo_bot.infra.nats_adapter",
+        "spot_turbo_bot.market.context",
+        "spot_turbo_bot.market.depth_ws",
+        "spot_turbo_bot.market.impact_estimator",
+        "spot_turbo_bot.market.micro_stats",
+        "spot_turbo_bot.runners.boot_lint",
+        "spot_turbo_bot.runners.diag",
+        "spot_turbo_bot.runners.one_sec_aggregator",
+        "spot_turbo_bot.runners.one_sec_runner",
+        "spot_turbo_bot.runners.start",
+        "spot_turbo_bot.runners.user_stream",
+        "spot_turbo_bot.trading.trading_engine",
+        "spot_turbo_bot.trading.trading_rules",
+        "spot_turbo_bot.trading.triggers"
+      ],
+      "imports": [
+        "__future__",
+        "dotenv",
+        "pathlib"
+      ],
+      "possibly_unused": [
+        "_optional_env_str"
+      ]
+    },
+    "spot_turbo_bot.core.exchange_info": {
+      "async_functions": [],
+      "classes": [
+        "ExchangeInfo"
+      ],
+      "file": "spot_turbo_bot\\core\\exchange_info.py",
+      "functions": [
+        "_decimals_from_step_like",
+        "round_down",
+        "round_to_step",
+        "round_to_tick"
+      ],
+      "imported_by": [
+        "spot_turbo_bot.runners.one_sec_aggregator",
+        "spot_turbo_bot.runners.one_sec_runner",
+        "spot_turbo_bot.runners.start",
+        "spot_turbo_bot.trading.trading_engine",
+        "spot_turbo_bot.trading.trading_rules",
+        "spot_turbo_bot.trading.triggers"
+      ],
+      "imports": [
+        "__future__",
+        "spot_turbo_bot.core.config",
+        "typing"
+      ],
+      "possibly_unused": []
+    },
+    "spot_turbo_bot.core.logger": {
+      "async_functions": [],
+      "classes": [],
+      "file": "spot_turbo_bot\\core\\logger.py",
+      "functions": [
+        "_now_ksa_str",
+        "dbg",
+        "dbg_ws",
+        "log_boot",
+        "log_buy",
+        "log_daily_reset",
+        "log_line",
+        "log_sell"
+      ],
+      "imported_by": [
+        "spot_turbo_bot.infra.binance_http",
+        "spot_turbo_bot.market.context",
+        "spot_turbo_bot.market.depth_ws",
+        "spot_turbo_bot.runners.diag",
+        "spot_turbo_bot.runners.one_sec_aggregator",
+        "spot_turbo_bot.runners.one_sec_runner",
+        "spot_turbo_bot.runners.runtime_tasks",
+        "spot_turbo_bot.runners.start",
+        "spot_turbo_bot.trading.trading_engine"
+      ],
+      "imports": [
+        "__future__",
+        "datetime",
+        "spot_turbo_bot.core.config"
+      ],
+      "possibly_unused": [
+        "_now_ksa_str",
+        "dbg_ws"
+      ]
+    },
+    "spot_turbo_bot.core.state": {
+      "async_functions": [],
+      "classes": [
+        "GlobalState",
+        "Position",
+        "SlotState"
+      ],
+      "file": "spot_turbo_bot\\core\\state.py",
+      "functions": [
+        "ensure_runtime_dir",
+        "load_state",
+        "save_state"
+      ],
+      "imported_by": [
+        "spot_turbo_bot.runners.runtime_tasks",
+        "spot_turbo_bot.runners.start",
+        "spot_turbo_bot.trading.trading_engine",
+        "spot_turbo_bot.trading.trading_rules"
+      ],
+      "imports": [
+        "__future__",
+        "dataclasses",
+        "datetime",
+        "spot_turbo_bot.core.config",
+        "spot_turbo_bot.core.utils_time",
+        "typing"
+      ],
+      "possibly_unused": []
+    },
+    "spot_turbo_bot.core.utils_time": {
+      "async_functions": [],
+      "classes": [],
+      "file": "spot_turbo_bot\\core\\utils_time.py",
+      "functions": [
+        "next_reset_dt_ksa",
+        "now_ksa",
+        "now_utc",
+        "seconds_until"
+      ],
+      "imported_by": [
+        "spot_turbo_bot.core.state",
+        "spot_turbo_bot.runners.runtime_tasks",
+        "spot_turbo_bot.trading.trading_engine"
+      ],
+      "imports": [
+        "__future__",
+        "datetime",
+        "spot_turbo_bot.core.config"
+      ],
+      "possibly_unused": [
+        "now_utc"
+      ]
+    },
+    "spot_turbo_bot.infra": {
+      "async_functions": [],
+      "classes": [],
+      "file": "spot_turbo_bot\\infra\\__init__.py",
+      "functions": [],
+      "imported_by": [],
+      "imports": [],
+      "possibly_unused": []
+    },
+    "spot_turbo_bot.infra.binance_http": {
+      "async_functions": [
+        "_raise_or_json"
+      ],
+      "classes": [
+        "BinanceHTTP",
+        "BinanceHTTPError"
+      ],
+      "file": "spot_turbo_bot\\infra\\binance_http.py",
+      "functions": [
+        "_normalize_credential"
+      ],
+      "imported_by": [
+        "spot_turbo_bot.runners.one_sec_aggregator",
+        "spot_turbo_bot.runners.start",
+        "spot_turbo_bot.runners.user_stream",
+        "spot_turbo_bot.trading.trading_engine",
+        "spot_turbo_bot.trading.triggers"
+      ],
+      "imports": [
+        "__future__",
+        "decimal",
+        "spot_turbo_bot.core.config",
+        "spot_turbo_bot.core.logger",
+        "typing",
+        "urllib.parse"
+      ],
+      "possibly_unused": []
+    },
+    "spot_turbo_bot.infra.nats_adapter": {
+      "async_functions": [
+        "_noop_async"
+      ],
+      "classes": [
+        "NATSConnectConfig",
+        "NATSOneSecAdapter",
+        "OneSecondEvent"
+      ],
+      "file": "spot_turbo_bot\\infra\\nats_adapter.py",
+      "functions": [
+        "_build_auth_details",
+        "_build_connect_config",
+        "_build_tls_context",
+        "_make_signature_cb",
+        "get_nats_connect_config"
+      ],
+      "imported_by": [
+        "spot_turbo_bot.runners.one_sec_aggregator",
+        "spot_turbo_bot.runners.one_sec_runner"
+      ],
+      "imports": [
+        "__future__",
+        "dataclasses",
+        "nats.aio.client",
+        "nkeys",
+        "spot_turbo_bot.core.config",
+        "typing"
+      ],
+      "possibly_unused": []
+    },
+    "spot_turbo_bot.market": {
+      "async_functions": [],
+      "classes": [],
+      "file": "spot_turbo_bot\\market\\__init__.py",
+      "functions": [],
+      "imported_by": [
+        "spot_turbo_bot.runners.runtime_tasks",
+        "spot_turbo_bot.runners.start",
+        "spot_turbo_bot.trading.trading_engine"
+      ],
+      "imports": [],
+      "possibly_unused": []
+    },
+    "spot_turbo_bot.market.context": {
+      "async_functions": [
+        "start_services",
+        "stop_services"
+      ],
+      "classes": [],
+      "file": "spot_turbo_bot\\market\\context.py",
+      "functions": [
+        "build_symbols_meta",
+        "setup"
+      ],
+      "imported_by": [
+        "spot_turbo_bot.runners.start"
+      ],
+      "imports": [
+        "spot_turbo_bot.core.config",
+        "spot_turbo_bot.core.logger",
+        "spot_turbo_bot.market.depth_ws",
+        "spot_turbo_bot.market.micro_stats",
+        "spot_turbo_bot.reports.report_writer",
+        "typing"
+      ],
+      "possibly_unused": [
+        "setup",
+        "start_services",
+        "stop_services"
+      ]
+    },
+    "spot_turbo_bot.market.depth_baseline": {
+      "async_functions": [],
+      "classes": [],
+      "file": "spot_turbo_bot\\market\\depth_baseline.py",
+      "functions": [
+        "pick_bucket"
+      ],
+      "imported_by": [],
+      "imports": [],
+      "possibly_unused": [
+        "pick_bucket"
+      ]
+    },
+    "spot_turbo_bot.market.depth_ws": {
+      "async_functions": [],
+      "classes": [
+        "Book",
+        "DepthWS"
+      ],
+      "file": "spot_turbo_bot\\market\\depth_ws.py",
+      "functions": [],
+      "imported_by": [
+        "spot_turbo_bot.market.context"
+      ],
+      "imports": [
+        "__future__",
+        "spot_turbo_bot.core.config",
+        "spot_turbo_bot.core.logger",
+        "typing"
+      ],
+      "possibly_unused": []
+    },
+    "spot_turbo_bot.market.impact_estimator": {
+      "async_functions": [],
+      "classes": [],
+      "file": "spot_turbo_bot\\market\\impact_estimator.py",
+      "functions": [
+        "_density_min",
+        "_log",
+        "_safe",
+        "estimate_fused",
+        "floor_to_step",
+        "floor_to_tick",
+        "impact_1pct_estimate",
+        "impact_1pct_lb"
+      ],
+      "imported_by": [
+        "spot_turbo_bot.trading.trading_engine"
+      ],
+      "imports": [
+        "spot_turbo_bot.core.config",
+        "statistics"
+      ],
+      "possibly_unused": [
+        "_density_min"
+      ]
+    },
+    "spot_turbo_bot.market.micro_stats": {
+      "async_functions": [],
+      "classes": [
+        "MicroStats"
+      ],
+      "file": "spot_turbo_bot\\market\\micro_stats.py",
+      "functions": [],
+      "imported_by": [
+        "spot_turbo_bot.market.context"
+      ],
+      "imports": [
+        "spot_turbo_bot.core.config"
+      ],
+      "possibly_unused": []
+    },
+    "spot_turbo_bot.reports": {
+      "async_functions": [],
+      "classes": [],
+      "file": "spot_turbo_bot\\reports\\__init__.py",
+      "functions": [],
+      "imported_by": [],
+      "imports": [],
+      "possibly_unused": []
+    },
+    "spot_turbo_bot.reports.report_writer": {
+      "async_functions": [],
+      "classes": [
+        "DailyTextReport"
+      ],
+      "file": "spot_turbo_bot\\reports\\report_writer.py",
+      "functions": [
+        "_day_key",
+        "_hms",
+        "_ksa_now"
+      ],
+      "imported_by": [
+        "spot_turbo_bot.market.context",
+        "spot_turbo_bot.runners.start"
+      ],
+      "imports": [
+        "zoneinfo"
+      ],
+      "possibly_unused": []
+    },
+    "spot_turbo_bot.runners": {
+      "async_functions": [],
+      "classes": [],
+      "file": "spot_turbo_bot\\runners\\__init__.py",
+      "functions": [],
+      "imported_by": [],
+      "imports": [],
+      "possibly_unused": []
+    },
+    "spot_turbo_bot.runners.boot_lint": {
+      "async_functions": [],
+      "classes": [],
+      "file": "spot_turbo_bot\\runners\\boot_lint.py",
+      "functions": [
+        "run_boot_lint"
+      ],
+      "imported_by": [
+        "spot_turbo_bot.runners.start"
+      ],
+      "imports": [
+        "__future__",
+        "spot_turbo_bot.core.config",
+        "typing"
+      ],
+      "possibly_unused": []
+    },
+    "spot_turbo_bot.runners.diag": {
+      "async_functions": [],
+      "classes": [
+        "StallWatchdog"
+      ],
+      "file": "spot_turbo_bot\\runners\\diag.py",
+      "functions": [
+        "touch_activity"
+      ],
+      "imported_by": [
+        "spot_turbo_bot.runners.user_stream",
+        "spot_turbo_bot.trading.triggers"
+      ],
+      "imports": [
+        "__future__",
+        "spot_turbo_bot.core.config",
+        "spot_turbo_bot.core.logger",
+        "typing"
+      ],
+      "possibly_unused": [
+        "StallWatchdog"
+      ]
+    },
+    "spot_turbo_bot.runners.one_sec_aggregator": {
+      "async_functions": [
+        "_async_main",
+        "_resolve_symbols"
+      ],
+      "classes": [
+        "OneSecAggregator",
+        "SymbolHistory",
+        "SymbolState"
+      ],
+      "file": "spot_turbo_bot\\runners\\one_sec_aggregator.py",
+      "functions": [
+        "_chunked",
+        "_parse_args",
+        "main"
+      ],
+      "imported_by": [],
+      "imports": [
+        "__future__",
+        "dataclasses",
+        "nats.aio.client",
+        "spot_turbo_bot.core.config",
+        "spot_turbo_bot.core.exchange_info",
+        "spot_turbo_bot.core.logger",
+        "spot_turbo_bot.infra.binance_http",
+        "spot_turbo_bot.infra.nats_adapter",
+        "typing"
+      ],
+      "possibly_unused": []
+    },
+    "spot_turbo_bot.runners.one_sec_runner": {
+      "async_functions": [],
+      "classes": [
+        "OneSecRunner"
+      ],
+      "file": "spot_turbo_bot\\runners\\one_sec_runner.py",
+      "functions": [],
+      "imported_by": [
+        "spot_turbo_bot.runners.start"
+      ],
+      "imports": [
+        "__future__",
+        "spot_turbo_bot.core.config",
+        "spot_turbo_bot.core.exchange_info",
+        "spot_turbo_bot.core.logger",
+        "spot_turbo_bot.infra.nats_adapter",
+        "spot_turbo_bot.trading.trading_engine",
+        "typing"
+      ],
+      "possibly_unused": []
+    },
+    "spot_turbo_bot.runners.runtime_tasks": {
+      "async_functions": [],
+      "classes": [
+        "DailyResetScheduler"
+      ],
+      "file": "spot_turbo_bot\\runners\\runtime_tasks.py",
+      "functions": [],
+      "imported_by": [
+        "spot_turbo_bot.runners.start"
+      ],
+      "imports": [
+        "__future__",
+        "datetime",
+        "spot_turbo_bot.core.logger",
+        "spot_turbo_bot.core.state",
+        "spot_turbo_bot.core.utils_time",
+        "spot_turbo_bot.market",
+        "spot_turbo_bot.trading.trading_engine"
+      ],
+      "possibly_unused": []
+    },
+    "spot_turbo_bot.runners.start": {
+      "async_functions": [
+        "main"
+      ],
+      "classes": [],
+      "file": "spot_turbo_bot\\runners\\start.py",
+      "functions": [
+        "_calc_proceeds_and_price_from_exec"
+      ],
+      "imported_by": [],
+      "imports": [
+        "__future__",
+        "decimal",
+        "spot_turbo_bot.core.config",
+        "spot_turbo_bot.core.exchange_info",
+        "spot_turbo_bot.core.logger",
+        "spot_turbo_bot.core.state",
+        "spot_turbo_bot.infra.binance_http",
+        "spot_turbo_bot.market",
+        "spot_turbo_bot.market.context",
+        "spot_turbo_bot.reports.report_writer",
+        "spot_turbo_bot.runners.boot_lint",
+        "spot_turbo_bot.runners.one_sec_runner",
+        "spot_turbo_bot.runners.runtime_tasks",
+        "spot_turbo_bot.runners.user_stream",
+        "spot_turbo_bot.trading.trading_engine",
+        "typing"
+      ],
+      "possibly_unused": []
+    },
+    "spot_turbo_bot.runners.user_stream": {
+      "async_functions": [],
+      "classes": [
+        "UserStreamManager"
+      ],
+      "file": "spot_turbo_bot\\runners\\user_stream.py",
+      "functions": [],
+      "imported_by": [
+        "spot_turbo_bot.runners.start"
+      ],
+      "imports": [
+        "__future__",
+        "spot_turbo_bot.core.config",
+        "spot_turbo_bot.infra.binance_http",
+        "spot_turbo_bot.runners.diag",
+        "typing"
+      ],
+      "possibly_unused": []
+    },
+    "spot_turbo_bot.trading": {
+      "async_functions": [],
+      "classes": [],
+      "file": "spot_turbo_bot\\trading\\__init__.py",
+      "functions": [],
+      "imported_by": [],
+      "imports": [],
+      "possibly_unused": []
+    },
+    "spot_turbo_bot.trading.exit_v2": {
+      "async_functions": [],
+      "classes": [
+        "ExitV2Controller",
+        "ExitV2Params",
+        "ExitV2State"
+      ],
+      "file": "spot_turbo_bot\\trading\\exit_v2.py",
+      "functions": [],
+      "imported_by": [
+        "spot_turbo_bot.trading.trading_engine"
+      ],
+      "imports": [
+        "__future__",
+        "dataclasses",
+        "typing"
+      ],
+      "possibly_unused": []
+    },
+    "spot_turbo_bot.trading.trading_engine": {
+      "async_functions": [],
+      "classes": [
+        "BuyRequest",
+        "TradingEngine"
+      ],
+      "file": "spot_turbo_bot\\trading\\trading_engine.py",
+      "functions": [
+        "_ceil_to_tick",
+        "_floor_to_step",
+        "_now_ms",
+        "compute_safe_quote"
+      ],
+      "imported_by": [
+        "spot_turbo_bot.runners.one_sec_runner",
+        "spot_turbo_bot.runners.runtime_tasks",
+        "spot_turbo_bot.runners.start",
+        "spot_turbo_bot.trading.triggers"
+      ],
+      "imports": [
+        "__future__",
+        "dataclasses",
+        "datetime",
+        "decimal",
+        "spot_turbo_bot.core.config",
+        "spot_turbo_bot.core.exchange_info",
+        "spot_turbo_bot.core.logger",
+        "spot_turbo_bot.core.state",
+        "spot_turbo_bot.core.utils_time",
+        "spot_turbo_bot.infra.binance_http",
+        "spot_turbo_bot.market",
+        "spot_turbo_bot.market.impact_estimator",
+        "spot_turbo_bot.trading.exit_v2",
+        "spot_turbo_bot.trading.trading_rules",
+        "typing"
+      ],
+      "possibly_unused": []
+    },
+    "spot_turbo_bot.trading.trading_rules": {
+      "async_functions": [],
+      "classes": [
+        "TradingRules"
+      ],
+      "file": "spot_turbo_bot\\trading\\trading_rules.py",
+      "functions": [],
+      "imported_by": [
+        "spot_turbo_bot.trading.trading_engine"
+      ],
+      "imports": [
+        "__future__",
+        "dataclasses",
+        "spot_turbo_bot.core.config",
+        "spot_turbo_bot.core.exchange_info",
+        "spot_turbo_bot.core.state",
+        "typing"
+      ],
+      "possibly_unused": []
+    },
+    "spot_turbo_bot.trading.triggers": {
+      "async_functions": [],
+      "classes": [
+        "PriceSnapshot",
+        "TriggerRunner"
+      ],
+      "file": "spot_turbo_bot\\trading\\triggers.py",
+      "functions": [],
+      "imported_by": [],
+      "imports": [
+        "__future__",
+        "dataclasses",
+        "spot_turbo_bot.core.config",
+        "spot_turbo_bot.core.exchange_info",
+        "spot_turbo_bot.infra.binance_http",
+        "spot_turbo_bot.runners.diag",
+        "spot_turbo_bot.trading.trading_engine",
+        "typing"
+      ],
+      "possibly_unused": [
+        "TriggerRunner"
+      ]
+    }
+  }
+}

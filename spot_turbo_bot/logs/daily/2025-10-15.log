@@ -1,0 +1,68 @@
+[BUY] DEXEUSDT slot=A t=2025-10-15 06:00:21 entry=6.91800000 open_1m=6.91350000
+target(+1.00%)=6.98718000 TP(+2.00%)=7.05636000 SL(-1.00%)=6.84882000 quote_spent=8.09
+| allowed<=8.09 planned=8.09 coverage=100.0% exp_slip~0.00% real_slip~0.00%
+[BUY] ALICEUSDT slot=B t=2025-10-15 06:00:21 entry=0.49160000 open_1m=0.49130000
+target(+1.00%)=0.49651600 TP(+2.00%)=0.50143200 SL(-1.00%)=0.48668400 quote_spent=8.12
+| allowed<=8.12 planned=8.12 coverage=100.0% exp_slip~0.00% real_slip~0.00%
+[BUY] PSGUSDT slot=A t=2025-10-15 06:39:09 entry=1.32100000 open_1m=1.31950000
+target(+1.00%)=1.33421000 TP(+2.00%)=1.34742000 SL(-1.00%)=1.30779000 quote_spent=8.11
+| allowed<=8.11 planned=8.11 coverage=100.0% exp_slip~0.00% real_slip~0.00%
+[BUY] FTTUSDT slot=B t=2025-10-15 06:39:09 entry=0.88840000 open_1m=0.88620000
+target(+1.00%)=0.89728400 TP(+2.00%)=0.90616800 SL(-1.00%)=0.87951600 quote_spent=8.12
+| allowed<=8.12 planned=8.12 coverage=100.0% exp_slip~0.00% real_slip~0.00%
+[EXIT-MARKET] FTTUSDT slot=B t=2025-10-15 06:39:34
+exit=0.87780000 entry=0.88840000 pnl_pct=-1.19% pnl_usdt=-0.10 hold=0m 25s
+[BUY] HIVEUSDT slot=B t=2025-10-15 06:39:35 entry=0.14900000 open_1m=0.14885000
+target(+1.00%)=0.15049000 TP(+2.00%)=0.15198000 SL(-1.00%)=0.14751000 quote_spent=7.90
+| allowed<=7.90 planned=7.90 coverage=100.0% exp_slip~0.00% real_slip~0.00%
+[BUY] XPLUSDT slot=A t=2025-10-15 07:37:35 entry=0.47350000 open_1m=0.47215000
+target(+1.00%)=0.47823500 TP(+2.00%)=0.48297000 SL(-1.00%)=0.46876500 quote_spent=8.05
+| allowed<=8.05 planned=8.05 coverage=100.0% exp_slip~0.00% real_slip~0.00%
+[BUY] FFUSDT slot=B t=2025-10-15 07:37:35 entry=0.14704000 open_1m=0.14686500
+target(+1.00%)=0.14851040 TP(+2.00%)=0.14998080 SL(-1.00%)=0.14556960 quote_spent=8.06
+| allowed<=8.06 planned=8.06 coverage=100.0% exp_slip~0.00% real_slip~0.00%
+[EXIT-MARKET] XPLUSDT slot=A t=2025-10-15 07:39:21
+exit=0.47200000 entry=0.47350000 pnl_pct=-0.32% pnl_usdt=-0.03 hold=1m 46s
+[BUY] WIFUSDT slot=A t=2025-10-15 07:39:22 entry=0.58400000 open_1m=0.58250000
+target(+1.00%)=0.58984000 TP(+2.00%)=0.59568000 SL(-1.00%)=0.57816000 quote_spent=8.03
+| allowed<=8.03 planned=8.03 coverage=100.0% exp_slip~0.00% real_slip~0.00%
+[BUY] YGGUSDT slot=A t=2025-10-15 08:58:41 entry=0.20640000 open_1m=0.20600000
+target(+1.00%)=0.20846400 TP(+2.00%)=0.21052800 SL(-1.00%)=0.20433600 quote_spent=8.01
+| allowed<=8.01 planned=8.01 coverage=100.0% exp_slip~0.00% real_slip~0.00%
+[BUY] ZKCUSDT slot=B t=2025-10-15 08:58:41 entry=0.19120000 open_1m=0.19105000
+target(+1.00%)=0.19311200 TP(+2.00%)=0.19502400 SL(-1.00%)=0.18928800 quote_spent=7.99
+| allowed<=7.99 planned=7.99 coverage=100.0% exp_slip~0.00% real_slip~0.00%
+[BUY] SOLVUSDT slot=A t=2025-10-15 10:50:56 entry=0.01949000 open_1m=0.01944000
+target(+1.00%)=0.01968490 TP(+2.00%)=0.01987980 SL(-1.00%)=0.01929510 quote_spent=8.03
+| allowed<=8.03 planned=8.03 coverage=100.0% exp_slip~0.00% real_slip~0.00%
+[BUY] FFUSDT slot=A t=2025-10-15 10:58:32 entry=0.14054000 open_1m=0.14050500
+target(+1.00%)=0.14194540 TP(+2.00%)=0.14335080 SL(-1.00%)=0.13913460 quote_spent=13.01
+| allowed<=13.01 planned=13.01 coverage=100.0% exp_slip~0.00% real_slip~0.00%
+[BUY] PNUTUSDT slot=B t=2025-10-15 10:58:32 entry=0.15220000 open_1m=0.15205000
+target(+1.00%)=0.15372200 TP(+2.00%)=0.15524400 SL(-1.00%)=0.15067800 quote_spent=13.01
+| allowed<=13.01 planned=13.01 coverage=100.0% exp_slip~0.00% real_slip~0.00%
+[BUY] 2ZUSDT slot=A t=2025-10-15 22:14:04 entry=0.26416000 open_1m=0.26407500
+target(+1.00%)=0.26680160 TP(+2.00%)=0.26944320 SL(-1.00%)=0.26151840 quote_spent=12.68
+| allowed<=12.68 planned=12.68 coverage=100.0% exp_slip~0.00% real_slip~0.00%
+[BUY] HOMEUSDT slot=B t=2025-10-15 22:14:05 entry=0.03168000 open_1m=0.03159000
+target(+1.00%)=0.03199680 TP(+2.00%)=0.03231360 SL(-1.00%)=0.03136320 quote_spent=12.93
+| allowed<=12.93 planned=12.93 coverage=100.0% exp_slip~0.00% real_slip~0.00%
+[EXIT-MARKET] 2ZUSDT slot=A t=2025-10-15 22:15:57
+exit=0.26434000 entry=0.26416000 pnl_pct=+0.07% pnl_usdt=+0.01 hold=1m 53s
+[BUY] ATOMUSDT slot=A t=2025-10-15 22:50:27 entry=3.33200000 open_1m=3.33100000
+target(+1.00%)=3.36532000 TP(+2.00%)=3.39864000 SL(-1.00%)=3.29868000 quote_spent=12.89
+| allowed<=12.89 planned=12.89 coverage=100.0% exp_slip~0.00% real_slip~0.00%
+[BUY] DEGOUSDT slot=B t=2025-10-15 22:50:27 entry=1.19100000 open_1m=1.18950000
+target(+1.00%)=1.20291000 TP(+2.00%)=1.21482000 SL(-1.00%)=1.17909000 quote_spent=12.90
+| allowed<=12.90 planned=12.90 coverage=100.0% exp_slip~0.00% real_slip~0.00%
+[BUY] ASTERUSDT slot=A t=2025-10-15 23:22:07 entry=1.39900000 open_1m=1.39750000
+target(+1.00%)=1.41299000 TP(+2.00%)=1.42698000 SL(-1.00%)=1.38501000 quote_spent=12.79
+| allowed<=12.79 planned=12.79 coverage=100.0% exp_slip~0.00% real_slip~0.00%
+[BUY] SOLVUSDT slot=B t=2025-10-15 23:22:07 entry=0.01923218 open_1m=0.01917500
+target(+1.00%)=0.01942450 TP(+2.00%)=0.01961682 SL(-1.00%)=0.01903986 quote_spent=12.79
+| allowed<=12.79 planned=12.79 coverage=100.0% exp_slip~0.00% real_slip~0.00%
+[EXIT-MARKET] ASTERUSDT slot=A t=2025-10-15 23:22:44
+exit=1.39800000 entry=1.39900000 pnl_pct=-0.07% pnl_usdt=-0.01 hold=0m 37s
+[BUY] HOMEUSDT slot=A t=2025-10-15 23:22:45 entry=0.03122000 open_1m=0.03121000
+target(+1.00%)=0.03153220 TP(+2.00%)=0.03184440 SL(-1.00%)=0.03090780 quote_spent=12.77
+| allowed<=12.77 planned=12.77 coverage=100.0% exp_slip~0.00% real_slip~0.00%

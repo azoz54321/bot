@@ -1,0 +1,7 @@
+aiohttp~=3.9
+orjson~=3.9
+uvloop~=0.19; platform_system != 'Windows'
+websockets~=12.0
+python-dotenv~=1.0
+nats-py~=2.6
+nkeys~=1.0

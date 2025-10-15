@@ -1,0 +1,44 @@
+[BUY] RENDERUSDT slot=A t=2025-10-14 09:05:45 entry=2.88900000 open_1m=2.88450000
+target(+-0.07%)=2.88700000 TP(+10.00%)=3.17600000 SL(-5.00%)=2.74300000 quote_spent=8.35
+| allowed<=8.35 planned=8.35 coverage=100.0% exp_slip~0.00% real_slip~0.00%
+[BUY] ARPAUSDT slot=B t=2025-10-14 09:05:45 entry=0.02258000 open_1m=0.02254500
+target(+-0.09%)=0.02256000 TP(+10.00%)=0.02481000 SL(-5.00%)=0.02143000 quote_spent=8.37
+| allowed<=8.37 planned=8.37 coverage=100.0% exp_slip~0.00% real_slip~0.00%
+[BUY] ARPAUSDT slot=A t=2025-10-14 09:18:02 entry=0.02291718 open_1m=0.02266000
+target(+0.89%)=0.02312000 TP(+10.00%)=0.02518000 SL(-5.00%)=0.02175000 quote_spent=8.43
+| allowed<=8.43 planned=8.43 coverage=100.0% exp_slip~0.00% real_slip~0.00%
+[EXIT-MARKET] ARPAUSDT slot=A t=2025-10-14 09:21:27
+exit=0.02202000 entry=0.02291718 pnl_pct=-3.91% pnl_usdt=-0.33 hold=3m 25s
+[BUY] DUSDT slot=A t=2025-10-14 09:24:19 entry=0.02546000 open_1m=0.02525000
+target(+1.37%)=0.02581000 TP(+10.00%)=0.02811000 SL(-5.00%)=0.02427000 quote_spent=8.25
+| allowed<=8.25 planned=8.25 coverage=100.0% exp_slip~0.00% real_slip~0.00%
+[BUY] EULUSDT slot=B t=2025-10-14 09:33:24 entry=8.71400000 open_1m=8.63450000
+target(+1.11%)=8.81100000 TP(+10.00%)=9.59600000 SL(-5.00%)=8.28700000 quote_spent=8.19
+| allowed<=8.19 planned=8.19 coverage=100.0% exp_slip~0.00% real_slip~0.00%
+[EXIT-MARKET] DUSDT slot=A t=2025-10-14 09:35:00
+exit=0.02513000 entry=0.02546000 pnl_pct=-1.30% pnl_usdt=-0.11 hold=10m 41s
+[EXIT-MARKET] EULUSDT slot=B t=2025-10-14 09:35:11
+exit=8.68000000 entry=8.71400000 pnl_pct=-0.39% pnl_usdt=-0.03 hold=1m 47s
+[BUY] BANANAS31USDT slot=A t=2025-10-14 11:35:27 entry=0.00348400 open_1m=0.00348200
+target(+5.00%)=0.00365820 TP(+1.00%)=0.00351884 SL(-1.00%)=0.00344916 quote_spent=8.19
+| allowed<=8.19 planned=8.19 coverage=100.0% exp_slip~0.00% real_slip~0.00%
+[BUY] TAOUSDT slot=B t=2025-10-14 11:35:28 entry=414.10000000 open_1m=414.10000000
+target(+5.00%)=434.80500000 TP(+1.00%)=418.24100000 SL(-1.00%)=409.95900000 quote_spent=8.16
+| allowed<=8.16 planned=8.16 coverage=100.0% exp_slip~0.00% real_slip~0.00%
+[BUY] SANDUSDT slot=A t=2025-10-14 12:23:19 entry=0.21700000 open_1m=0.21685000
+target(+5.00%)=0.22785000 TP(+10.00%)=0.23870000 SL(-5.00%)=0.20615000 quote_spent=8.03
+| allowed<=8.03 planned=8.03 coverage=100.0% exp_slip~0.00% real_slip~0.00%
+[BUY] SKLUSDT slot=B t=2025-10-14 12:23:19 entry=0.02063000 open_1m=0.02058000
+target(+5.00%)=0.02166150 TP(+10.00%)=0.02269300 SL(-5.00%)=0.01959850 quote_spent=8.21
+| allowed<=8.21 planned=8.21 coverage=100.0% exp_slip~0.00% real_slip~0.00%
+[BUY] VETUSDT slot=A t=2025-10-14 13:18:27 entry=0.01817000 open_1m=0.01815000
+target(+5.00%)=0.01907850 TP(+1.00%)=0.01835170 SL(-1.00%)=0.01798830 quote_spent=8.12
+| allowed<=8.12 planned=8.12 coverage=100.0% exp_slip~0.00% real_slip~0.00%
+[BUY] WLFIUSDT slot=B t=2025-10-14 13:18:27 entry=0.13620000 open_1m=0.13605000
+target(+5.00%)=0.14301000 TP(+1.00%)=0.13756200 SL(-1.00%)=0.13483800 quote_spent=8.12
+| allowed<=8.12 planned=8.12 coverage=100.0% exp_slip~0.00% real_slip~0.00%
+[EXIT-FILLED] VETUSDT slot=A t=2025-10-14 13:21:17
+exit=0.01822000 entry=0.01817000 pnl_pct=+0.28% pnl_usdt=+0.02 hold=2m 50s
+[BUY] SANDUSDT slot=A t=2025-10-14 13:21:18 entry=0.21430000 open_1m=0.21415000
+target(+5.00%)=0.22501500 TP(+1.00%)=0.21644300 SL(-1.00%)=0.21215700 quote_spent=8.14
+| allowed<=8.14 planned=8.14 coverage=100.0% exp_slip~0.00% real_slip~0.00%
