@@ -1,0 +1,11 @@
+logs/
+runtime/
+data/
+nats-server-*/
+scripts/
+module_map.json
+CLEANUP_REPORT.md
+MODULE_MAP.md
+README.md
+requirements.txt
+.venv/
